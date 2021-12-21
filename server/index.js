@@ -15,8 +15,7 @@ app.use(cookieParser())
 const mongoose = require('mongoose')
 mongoose
   .connect(
-    'mongodb+srv://admin:1234@cluster0.75koc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-    {}
+    'mongodb+srv://admin:1234@cluster0.75koc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
   )
   .then(() => console.log('성공'))
   .catch(err => console.log('실패'))

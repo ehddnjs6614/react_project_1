@@ -9,16 +9,6 @@ function LandingPage(props) {
     })
   }, [])
 
-  const onClickHandler = () => {
-    axios.get('/api/users/logout').then(response => {
-      if (response.data.success) {
-        props.history.push('/login')
-      } else {
-        alert('로그아웃 하는데 실패 했습니다.')
-      }
-    })
-  }
-
   return (
     <div
       style={{
@@ -29,9 +19,7 @@ function LandingPage(props) {
         height: '100vh',
       }}
     >
-      <h2>LandingPage</h2>
-
-      <button onClick={onClickHandler}>로그아웃</button>
+      <h2>LandingPage 복사본</h2>
     </div>
   )
 }
