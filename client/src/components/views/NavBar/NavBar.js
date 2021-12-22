@@ -41,7 +41,11 @@ function NavBar(props) {
               HOME
             </Link>
           </li>
-          <li className="items">Services</li>
+          <li className="items">
+            <Link onClick={handleClick} className="text-link" to="/movie">
+              Movie
+            </Link>
+          </li>
           <li className="items">Contact</li>
           <li className="items">
             <Link onClick={handleClick} className="text-link" to="/register">
