@@ -8,6 +8,7 @@ import NavBar from './components/views/NavBar/NavBar'
 import RegisterPage from './components/views/RegisterPage/RegisterPage'
 import MovieDetail from './components/views/MovieDetail/MovieDetail'
 import Auth from './hoc/auth'
+import Footer from './components/views/Footer/Footer'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           />
         </Switch>
       </div>
+      <Footer />
     </Router>
   )
 }

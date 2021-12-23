@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import '../NavBar/NavBar.css'
+
 function NavBar(props) {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -38,7 +39,7 @@ function NavBar(props) {
         <ul className="list">
           <li className="items">
             <Link onClick={handleClick} className="text-link" to="/">
-              HOME
+              Trailer
             </Link>
           </li>
           <li className="items">
@@ -49,12 +50,12 @@ function NavBar(props) {
           <li className="items">Contact</li>
           <li className="items">
             <Link onClick={handleClick} className="text-link" to="/register">
-              회원가입
+              Sign Up
             </Link>
           </li>
           <li className="items">
             <Link onClick={handleClick} className="text-link" to="/login">
-              로그인
+              Login
             </Link>
           </li>
           <li className="items" onClick={onClickHandler}>
@@ -62,7 +63,6 @@ function NavBar(props) {
           </li>
         </ul>
       )}
-
       <button onClick={toggleNav} className="btn">
         BTN
       </button>

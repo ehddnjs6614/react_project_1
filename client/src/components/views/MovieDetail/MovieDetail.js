@@ -4,6 +4,7 @@ import { API_KEY, API_URL, IMAGE_BASE_URL } from '../../Config'
 import GridCards from '../commons/GridCards'
 import MainImage from '../MoviePage/Sections/MainImage'
 import MovieInfo from './Sections/MovieInfo'
+import Favorite from './Sections/Favorite'
 //펑셔널 컨포논토
 
 function MovieDetail(props) {
@@ -19,6 +20,7 @@ function MovieDetail(props) {
       .then(response => {
         setDetail(response)
       })
+
     //영화 등장인물 api
     fetch(`${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`)
       .then(response => response.json())
@@ -35,7 +37,7 @@ function MovieDetail(props) {
   return (
     <div>
       {/*Header*/}
-      <div style={{ width: '100%', margin: '0' }}>
+      <div style={{ margin: 0 }}>
         <MainImage
           image={`${IMAGE_BASE_URL}w1280${Detail.backdrop_path}`}
           title={Detail.title}
@@ -45,6 +47,14 @@ function MovieDetail(props) {
 
       {/*Body*/}
       <div style={{ width: '85%', margin: '1rem auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Favorite
+            movieInfo={Detail}
+            movieId={movieId}
+            userFrom={localStorage.getItem('userId')}
+          />
+        </div>
+
         {/* Movie info*/}
         <MovieInfo detail={Detail} />
         <br />

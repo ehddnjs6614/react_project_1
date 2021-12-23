@@ -64,7 +64,7 @@ function MoviePage() {
             ))}
         </Row>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', margin: 15 }}>
         <button onClick={loadMoreItems}>Load More</button>
       </div>
     </div>

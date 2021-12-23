@@ -27,6 +27,7 @@ function LoginPage(props) {
     }
     dispatch(loginUser(body)).then(response => {
       if (response.payload.loginSuccess) {
+        window.localStorage.setItem('userId', response.payload.userId) //로그인 흔적을 로컬스토리지에 임의저장
         props.history.push('/')
       } else {
         alert('Error')
