@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff')
+    format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.register-wrap {
+  font-family: 'Pretendard-Light';
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.register-title {
+  padding: 50px 0 10px 0;
+  font-size: 50px;
+  border-bottom: 5px solid black;
+}
+
+.input-area-wrap {
+  padding-top: 50px;
+  text-align: left;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 145px;
+  font-size: 25px;
+}
+
+.user-input-area {
+  width: calc(99.3% - 145px);
+  height: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.register-btn-wrap {
+  width: calc(99.3% - 145px);
+  height: 50px;
+  line-height: 50px;
+  margin-left: auto;
+  margin-bottom: 50px;
+  background-color: red;
+}
+
+.register-btn-wrap a {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+
+.register-btn-wrap a:hover {
+  font-weight: bold;
+}
+
+.register-alert-area {
+  text-align: right;
+  font-size: 18px;
+}
+
+.register-alert-area strong {
+  cursor: pointer;
+  text-decoration: underline;
+}

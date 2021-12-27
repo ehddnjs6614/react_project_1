@@ -4,14 +4,16 @@ function MainImage(props) {
   return (
     <div
       style={{
-        background: `linear-gradient(to bottom, rgba(0,0,0,0)
-        39%,rgba(0,0,0,0)
-        41%,rgba(0,0,0,0.65)
-        100%),
-        url('${props.image}'), #1c1c1c`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0)
+        20%,rgba(0,0,0,0)
+        10%,rgba(0,0,0,0.65)
+        65%),
+        url('${props.image}')`,
+        backgroundColor: '#fff',
         height: '600px',
-        backgroundSize: '100%, cover',
+        backgroundSize: '100%, auto',
         backgroundPosition: 'center, center',
+        backgroundRepeat: 'no-repeat',
         width: '100%',
         position: 'relative',
       }}
@@ -22,7 +24,6 @@ function MainImage(props) {
             position: 'absolute',
             maxWidth: '500px',
             bottom: '2rem',
-            marginLeft: '2rem',
           }}
         >
           <h2 style={{ color: 'white' }}>{props.title}</h2>

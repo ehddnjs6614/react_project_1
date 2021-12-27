@@ -47,7 +47,7 @@ function NavBar(props) {
               Movie
             </Link>
           </li>
-          <li className="items">Contact</li>
+
           <li className="items">
             <Link onClick={handleClick} className="text-link" to="/register">
               Sign Up
