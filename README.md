@@ -21,7 +21,19 @@
     ![디테일로그](https://user-images.githubusercontent.com/81339388/147521375-0fd898ff-7f60-4ca4-ab7e-3bd3c37b57d4.JPG)
  6. 또한 등장인물 까지 불러온것을 볼수있다.
     ![인물로그](https://user-images.githubusercontent.com/81339388/147521384-f10a6b80-4f0c-461d-9430-36350fad4ce2.JPG)
-
+ 7. 불러온 API를 state에 담았다면 map함수를 이용해 화면에 뿌려준다.
+    ```C
+    Casts.map((cast, index) => (
+                <React.Fragment key={index}>
+                  <GridCards
+                    image={
+                      cast.profile_path
+                        ? `${IMAGE_BASE_URL}w500${cast.profile_path}`
+                        : null
+                    }
+                    characterName={cast.name}
+                  />
+    ```
 
 
 
