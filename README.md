@@ -48,7 +48,16 @@
                     characterName={cast.name}
                   />
     ```
+    
+    
+    ***
+    
+ 8. React-Player 를 활용해 메인화면에 동영상들을 보여준다.
+  
+    ![image](https://user-images.githubusercontent.com/81339388/148323010-d942f3b7-0317-4da7-9f70-f532473162cd.png)
 
+    
+***
 
 
 ## Server
