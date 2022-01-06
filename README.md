@@ -8,7 +8,6 @@
  - Antd
  - Axios
  - react-player
- - react-redux
  - react-router-dom@5 
 
 ## 주요기능
