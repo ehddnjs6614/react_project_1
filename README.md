@@ -11,7 +11,7 @@
  - react-redux
  - react-router-dom@5 
 
-## 주요기술
+## 주요기능
 
  - 폴더 구조는 크게 client (react) , server (express) 2가지로 나뉜다.
   - 파일을 실행시킬때는 client나 server 루트가 아닌 최상위루트에서 `npm run dev` 해줘야 client ,server 두개다 실행된다.
